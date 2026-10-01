@@ -85,6 +85,47 @@ function mediaAritmetica(){
         percentualPositivos: ${percentualPositivos.toFixed(2)} %
         percentualNegativos: ${percentualNegativos.toFixed(2)} %
         `)
+}
+function quantidadeNosIntervalos(){
 
+}
+function algoritmoEstruturado() {
+    let valores = {
+        primeiro: 3,
+        segundo: 5,
+        terceiro: 9,
+        quarto: 6,
+        quianto: 10,
+        encerramento: 0
+    }
+    let pares = 0;
+    let impares = 0;
+    let somaPares = 0;
+    let somaImpares = 0;
+    let quantidade = 0;
 
+    for (chave in valores) {
+        const valor = valores[chave];
+        console.log(`chaves do objeto ${valor}`);
+
+        if (valor === 0){
+            break;
+        }
+        quantidade+++
+        soma += valor
+
+        if (valor % 2 == 0) {
+            pares++
+        } else {
+            impares++
+        } 
+
+        let mediaPares = somaPares / pares;
+        let mediaGeral = soma / quantidade;
+
+        console.log(`Quantidade de pares: ${pares}`);
+        console.log(`Quantidade de ímpares: ${impares}`);
+        console.log(`Média dos pares: ${mediaPares}`);
+        console.log(`Média geral: ${mediaGeral}`);
+    }
 }
