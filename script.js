@@ -56,3 +56,35 @@ function menorEMaiorAltura() {
 
 
 }
+function mediaAritmetica(){
+    let soma = 0;
+    let positivos = 0;
+    let negativos = 0;
+    let quantidadeValores = 0;
+    let valor = 10;
+
+    while (valor >= -8) {
+        sama += valor;
+        quantidadeValores++
+        
+        if (valor > 0) {
+            positivos++
+        } else {
+            negativos++
+        }
+        valor -= 1; //fator que faz ele virar negativo ao final da interação
+    }
+    const media = soma / quantidadeValores;
+    const percentualPositivos = (positivos * 100) / quantidadeValores;
+    const percentualNegativos = negativos / quantidadeValores * 100;
+    alert(`
+        quantidade: ${quantidadeValores}
+        positivos: ${positivos}
+        negativos: ${negativos}
+        soma: ${soma};
+        percentualPositivos: ${percentualPositivos.toFixed(2)} %
+        percentualNegativos: ${percentualNegativos.toFixed(2)} %
+        `)
+
+
+}
